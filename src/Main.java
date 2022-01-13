@@ -4,10 +4,10 @@ public class Main {
 
     static int desen(int n, int m, boolean state){
        System.out.print(n + " ");
-       if(state == false && n == m){
+       if(!state && n == m){
            return n;
        }
-       if(n > 0 && state == true){
+       if(n > 0 && state){
            return desen(n - 5, m, state);
        }else if(n <= m){
            state = false;
